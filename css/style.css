@@ -318,10 +318,13 @@ address {
 }
 
 /* Наши проекты */
+.projects {
+  margin-top: 93px;
+  margin-bottom: 94px;
+}
 .projects-filter {
   justify-content: center;
 
-  margin-top: 93px;
   margin-bottom: 50px;
 }
 
