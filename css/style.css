@@ -9,9 +9,17 @@
   --background-high-accent: rgba(33, 150, 243, 0.9);
   --main-icons: #afb1b8;
   --footer-icons: rgba(255, 255, 255, 0.1);
-  --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --footer-address-color: rgba(255, 255, 255, 0.6);
   --footer-background: #2f303a;
   --footer-developed-text: rgba(255, 255, 255, 0.4);
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -23,6 +31,9 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Заголовки */
@@ -34,6 +45,15 @@ h5,
 h6 {
   color: var(--text-bold-color);
   font-weight: 700;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Абзацы */
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Обнуление */
@@ -42,49 +62,118 @@ h6 {
 }
 .list {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 address {
   font-style: normal;
 }
 
+.hidden {
+  display: none;
+}
+
 /*------------- Шапка и подвал ---------- */
-.nav-header .link {
+/* header */
+.header {
+  align-items: center;
+}
+
+.header > address > .list {
+  margin-left: auto;
+}
+.header .link {
   color: var(--text-bold-color);
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.nav-site {
+  margin-left: 85px;
+  margin-top: 32px;
+}
+
+.nav-site .link {
+  display: inline-block;
+  padding-bottom: 32px;
+}
+
+.nav-site .item + .item {
+  margin-left: 50px;
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.header-address .link {
+  color: var(--text-normal-color);
+}
+
+.header-address .item + .item {
+  margin-left: 30px;
+}
+/* footer */
 .footer {
   background-color: var(--footer-background);
 }
-.footer > .logo,
-.footer .adress {
+
+.footer-upper {
+  align-items: center;
+}
+.footer-address-container {
+  margin: 45px 69px 46px 0px;
+}
+
+.footer .address {
+  flex-direction: column;
+  margin-top: 8px;
+}
+.footer-address-container .link {
+  margin-top: 9px;
+}
+
+.footer .logo,
+.footer .address {
   color: var(--white-color);
 }
-.footer > .text {
+.footer .text {
   color: var(--white-color);
 
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
 }
-.adress > .link {
-  color: var(--footer-adress-color);
+.address > .link {
+  color: var(--footer-address-color);
 }
+
+.footer-join .text {
+  margin-bottom: 20px;
+}
+
+.footer-mail {
+  margin-left: auto;
+}
+
 .developed {
   color: var(--footer-developed-text);
-
   font-size: 12px;
   line-height: 2;
+
+  display: flex;
+  justify-content: center;
 }
 
 /* Наведение */
-.nav-header .link:focus,
-.nav-header .link:hover,
-.footer > .logo:focus,
-.footer > .logo:hover,
-.adress > .link:focus,
-.adress > .link:hover {
+.header .link:focus,
+.header .link:hover,
+.footer .logo:focus,
+.footer .logo:hover,
+.address .link:focus,
+.address .link:hover {
   color: #2196f3;
 }
 
@@ -102,25 +191,89 @@ address {
 }
 /* -------------MAIN CONTENT------------------ */
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-width {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Заголовки секций index.html */
+.directions > .title,
+.team > .title,
+.clients > .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.features .title-secondary,
+.team .title-secondary {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Оступы для секций */
+.hero,
+.features,
+.directions,
+.team,
+.clients {
+  margin-bottom: 94px;
+}
+/* Отступы элементов списка */
+.features .item + .item,
+.directions .item + .item,
+.team .item + .item,
+.clients .item + .item {
+  margin-left: 30px;
+}
+
+/* Соц.сети */
+.social-item {
+  width: 44px;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
 /* Герой - Заказать услугу */
 .hero {
   background-color: var(--background-white-text);
+  text-align: center;
+
+  height: 600px;
 }
 
-.hero > .title {
+.hero .title {
   color: var(--white-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  display: inline-block;
+  margin: 200px 252px 30px;
 }
 
 .hero .link {
   color: var(--white-color);
   background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .hero .link:focus,
@@ -129,39 +282,66 @@ address {
   background-color: var(--white-color);
 }
 
-/* Заголовки секций index.html */
-.directions > .title,
-.team > .title,
-.clients > .title {
-  font-size: 36px;
-  line-height: 1, 16;
-  text-align: center;
-}
-
 /* Особенности веб студии */
+.features .item {
+  width: 270px;
+}
 
 /* Чем мы занимаемся */
 .directions .link {
   color: var(--white-color);
   background-color: var(--background-white-text);
+  text-transform: uppercase;
+  text-align: center;
+
+  /* ВРЕМЕННО СМЕСТИЛ */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Наша команда */
 .team {
   background-color: var(--background-accent);
+  text-align: center;
+
+  padding: 94px 0px;
+}
+.team-social-list {
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+/* Постоянные клиенты */
+.clients .item {
+  width: 170px;
 }
 
 /* Наши проекты */
+.projects-filter {
+  justify-content: center;
+
+  margin-top: 93px;
+  margin-bottom: 50px;
+}
+
+.projects-filter .filter + .filter {
+  margin-left: 8px;
+}
+
 .projects h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin: 20px 24px 4px;
 }
 .projects .text {
   color: var(--text-normal-color);
-
   font-size: 16px;
   line-height: 1.87;
+
+  margin: 0px 24px 20px;
 }
 .projects .description {
   color: var(--white-color);
@@ -171,10 +351,22 @@ address {
   line-height: 1.56;
 }
 
+.projects .item {
+  width: 370px;
+}
+
+.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 /* Кнопки наши проекты */
 .button {
   color: var(--text-bold-color);
   background-color: var(--background-accent-);
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .button:focus,
 .button:hover {

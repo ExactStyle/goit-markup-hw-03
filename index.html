@@ -14,29 +14,29 @@
   <body>
     <!-- Шапка -->
     <header>
-      <nav class="nav-header">
+      <nav class="header flex-container main-width">
         <a class="logo link" lang="en" href="./index.html">
           <span>Web</span> Studio
         </a>
-        <ul class="list">
-          <li>
+        <ul class="nav-site list flex-container">
+          <li class="item">
             <a class="link" href="./index.html">Студия</a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href="">Контакты</a>
           </li>
         </ul>
-        <address>
-          <ul class="list">
-            <li>
+        <address class="header-address">
+          <ul class="list flex-container">
+            <li class="item">
               <a class="link" lang="en" href="mailto:info@devstudio.com">
                 info@devstudio.com
               </a>
             </li>
-            <li>
+            <li class="item">
               <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -47,14 +47,16 @@
     <main>
       <!-- Заказать услугу -->
       <section class="hero">
-        <h1 class="title">эффективные решения для вашего бизнеса</h1>
-        <a class="link" href="">Заказать услугу</a>
+        <div class="main-width">
+          <h1 class="title">эффективные решения для вашего бизнеса</h1>
+          <a class="link" href="">Заказать услугу</a>
+        </div>
       </section>
       <!-- Особенности веб студии -->
-      <section>
-        <h2>Особенности веб студии</h2>
-        <ul class="list">
-          <li>
+      <section class="features">
+        <h2 class="hidden">Особенности веб студии</h2>
+        <ul class="list flex-container main-width">
+          <li class="item">
             <a href="">
               <img
                 src="./images/features/antenna.svg"
@@ -63,13 +65,13 @@
                 height="70"
               />
             </a>
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="title-secondary">Внимание к деталям</h3>
+            <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/features/clock.svg"
@@ -78,13 +80,13 @@
                 height="70"
               />
             </a>
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="title-secondary">Пунктуальность</h3>
+            <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/features/diagram.svg"
@@ -93,13 +95,13 @@
                 height="70"
               />
             </a>
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="title-secondary">Планирование</h3>
+            <p class="text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/features/astronaut.svg"
@@ -108,8 +110,8 @@
                 height="70"
               />
             </a>
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="title-secondary">Современные технологии</h3>
+            <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -119,8 +121,8 @@
       <!-- Чем мы занимаемся -->
       <section class="directions">
         <h2 class="title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list flex-container main-width">
+          <li class="item">
             <a class="link" href="">
               <img
                 src="./images/directions/desktop.jpg"
@@ -131,7 +133,7 @@
               Десктопные приложения
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href="">
               <img
                 src="./images/directions/mobile.jpg"
@@ -142,7 +144,7 @@
               Мобильные приложения
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href="">
               <img
                 src="./images/directions/design.jpg"
@@ -158,8 +160,8 @@
       <!-- Наша команда -->
       <section class="team">
         <h2 class="title">Наша команда</h2>
-        <ul class="list" lang="en">
-          <li>
+        <ul class="list flex-container main-width" lang="en">
+          <li class="item">
             <a href="">
               <img
                 src="./images/team/smith.jpg"
@@ -168,32 +170,32 @@
                 height="260"
               />
             </a>
-            <h3>John Smith</h3>
+            <h3 class="title-secondary">John Smith</h3>
             <p>Product Designer</p>
-            <ul class="list">
-              <li>
+            <ul class="team-social-list list flex-container">
+              <li class="social-item">
                 <a aria-label="instagram link" href="">
                   <img src="./images/social/instagram.svg" alt="instagram" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="twitter link" href="">
                   <img src="./images/social/twitter.svg" alt="twitter" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="facebook link" href="">
                   <img src="./images/social/facebook.svg" alt="facebook" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="linkedin link" href="">
                   <img src="./images/social/linkedin.svg" alt="linkedin" />
                 </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/team/stewart.jpg"
@@ -202,32 +204,32 @@
                 height="260"
               />
             </a>
-            <h3>Marta Stewart</h3>
+            <h3 class="title-secondary">Marta Stewart</h3>
             <p>Frontend Developer</p>
-            <ul class="list">
-              <li>
+            <ul class="team-social-list list flex-container">
+              <li class="social-item">
                 <a aria-label="instagram link" href="">
                   <img src="./images/social/instagram.svg" alt="instagram" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="twitter link" href="">
                   <img src="./images/social/twitter.svg" alt="twitter" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="facebook link" href="">
                   <img src="./images/social/facebook.svg" alt="facebook" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="linkedin link" href="">
                   <img src="./images/social/linkedin.svg" alt="linkedin" />
                 </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/team/jakis.jpg"
@@ -236,32 +238,32 @@
                 height="260"
               />
             </a>
-            <h3>Robert Jakis</h3>
+            <h3 class="title-secondary">Robert Jakis</h3>
             <p>Marketing</p>
-            <ul class="list">
-              <li>
+            <ul class="team-social-list list flex-container">
+              <li class="social-item">
                 <a aria-label="instagram link" href="">
                   <img src="./images/social/instagram.svg" alt="instagram" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="twitter link" href="">
                   <img src="./images/social/twitter.svg" alt="twitter" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="facebook link" href="">
                   <img src="./images/social/facebook.svg" alt="facebook" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="linkedin link" href="">
                   <img src="./images/social/linkedin.svg" alt="linkedin" />
                 </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <a href="">
               <img
                 src="./images/team/doe.jpg"
@@ -270,25 +272,25 @@
                 height="260"
               />
             </a>
-            <h3>Martin Doe</h3>
+            <h3 class="title-secondary">Martin Doe</h3>
             <p>UI Designer</p>
-            <ul class="list">
-              <li>
+            <ul class="team-social-list list flex-container">
+              <li class="social-item">
                 <a aria-label="instagram link" href="">
                   <img src="./images/social/instagram.svg" alt="instagram" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="twitter link" href="">
                   <img src="./images/social/twitter.svg" alt="twitter" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="facebook link" href="">
                   <img src="./images/social/facebook.svg" alt="facebook" />
                 </a>
               </li>
-              <li>
+              <li class="social-item">
                 <a aria-label="linkedin link" href="">
                   <img src="./images/social/linkedin.svg" alt="linkedin" />
                 </a>
@@ -300,13 +302,13 @@
       <!-- Постоянные клиенты -->
       <section class="clients">
         <h2 class="title">Постоянные клиенты</h2>
-        <ul class="list" lang="en">
-          <li>
+        <ul class="list flex-container main-width" lang="en">
+          <li class="item">
             <a aria-label="company link" href="">
               <img src="./images/clients/logo_1.svg" alt="YA & CO" />
             </a>
           </li>
-          <li>
+          <li class="item">
             <a aria-label="company link" href="">
               <img
                 src="./images/clients/logo_2.svg"
@@ -314,22 +316,22 @@
               />
             </a>
           </li>
-          <li>
+          <li class="item">
             <a aria-label="company link" href="">
               <img src="./images/clients/logo_3.svg" alt="Company" />
             </a>
           </li>
-          <li>
+          <li class="item">
             <a aria-label="company link" href="">
               <img src="./images/clients/logo_4.svg" alt="Foster Peters" />
             </a>
           </li>
-          <li>
+          <li class="item">
             <a aria-label="company link" href="">
               <img src="./images/clients/logo_5.svg" alt="Brand" />
             </a>
           </li>
-          <li>
+          <li class="item">
             <a aria-label="company link" href="">
               <img src="./images/clients/logo_6.svg" alt="Company tagline" />
             </a>
@@ -339,40 +341,50 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <!-- Адресс -->
-      <a class="logo link" lang="en" href="./index.html">
-        <span>Web</span> Studio
-      </a>
-      <address class="adress">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <a class="link" href="mailto:info@example.com">info@example.com</a>
-        <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
+      <div class="footer-upper flex-container main-width">
+        <div class="footer-address-container">
+          <a class="logo link" lang="en" href="./index.html">
+            <span>Web</span> Studio
+          </a>
+          <!-- Адресс -->
+          <address class="address flex-container">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </address>
+        </div>
 
-      <!-- Соцсети студии -->
-      <p class="text">присоединяйтесь</p>
-      <ul class="list" lang="en">
-        <li>
-          <a aria-label="instagram link" href="">
-            <img src="./images/social/instagram.svg" alt="instagram" />
-          </a>
-        </li>
-        <li>
-          <a aria-label="twitter link" href="">
-            <img src="./images/social/twitter.svg" alt="twitter" />
-          </a>
-        </li>
-        <li>
-          <a aria-label="facebook link" href="">
-            <img src="./images/social/facebook.svg" alt="facebook" />
-          </a>
-        </li>
-        <li>
-          <a aria-label="linkedin link" href="">
-            <img src="./images/social/linkedin.svg" alt="linkedin" />
-          </a>
-        </li>
-      </ul>
+        <!-- Соцсети студии -->
+        <div class="footer-join">
+          <p class="text">присоединяйтесь</p>
+          <ul class="list flex-container" lang="en">
+            <li class="social-item">
+              <a aria-label="instagram link" href="">
+                <img src="./images/social/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="social-item">
+              <a aria-label="twitter link" href="">
+                <img src="./images/social/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li class="social-item">
+              <a aria-label="facebook link" href="">
+                <img src="./images/social/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="social-item">
+              <a aria-label="linkedin link" href="">
+                <img src="./images/social/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-mail">
+          <p class="text">подпишитесь на рассылку</p>
+        </div>
+      </div>
 
       <p class="developed">2020 | Developed by GoIT Students</p>
     </footer>
