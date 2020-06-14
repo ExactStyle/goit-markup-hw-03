@@ -78,7 +78,6 @@ address {
 /* header */
 .header {
   align-items: center;
-  margin-bottom: 93px;
 }
 
 .header > address > .list {
@@ -320,7 +319,7 @@ address {
 
 /* Наши проекты */
 .projects {
-  /* margin-top: 93px; */
+  margin-top: 93px;
   margin-bottom: 94px;
 }
 .filter-container {
