@@ -205,9 +205,9 @@ address {
 }
 
 /* Заголовки секций index.html */
-.directions > .title,
-.team > .title,
-.clients > .title {
+.directions .title,
+.team .title,
+.clients .title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
